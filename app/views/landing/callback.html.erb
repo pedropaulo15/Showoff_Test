@@ -1,4 +1,8 @@
-<h1>Welcome to <%= @user.username %></h1>
+<h1>Welcome to <%= @user.username %>'s Profile </h1>
+
+<div align="center">
+    
+</div>
 
 <% for media_item in @client.user_recent_media %>
     <div style='float:left;'><img src=<%= media_item.images.thumbnail.url %>><br/> 

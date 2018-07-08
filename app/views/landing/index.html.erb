@@ -1,1 +1,9 @@
-<%= link_to "Login With Instagram", Instagram.authorize_url(redirect_uri: ENV['REDIRECT_URI'], scope: "basic public_content likes comments relationships") %>
+<div class="center jumbotron">
+  <h1>Showoff Test</h1>
+  <p>Pedro Santos</p>
+  <%= link_to 'Login With Instagram', 
+    Instagram.authorize_url(redirect_uri: ENV['REDIRECT_URI'], scope: "basic public_content likes comments relationships"), 
+    class: "btn btn-primary btn-lg btn-xlarge" %>
+</div>
+
+<%# <%= link_to "Login With Instagram", Instagram.authorize_url(redirect_uri: ENV['REDIRECT_URI'], scope: "basic public_content likes comments relationships") %> %>
