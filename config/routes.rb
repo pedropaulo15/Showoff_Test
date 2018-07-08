@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root  'landing#index'
   get   '/callback' => 'landing#callback'
-  # delete 'logout' => 'landing#destroy'
+  delete 'logout' => 'landing#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

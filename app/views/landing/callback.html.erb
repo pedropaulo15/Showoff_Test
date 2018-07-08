@@ -1,13 +1,17 @@
-<h1>Welcome to <%= @user.username %>'s Profile </h1>
-
-<div align="center">
-    
+<div class="page-title">
+    <h1 align="center">Welcome to <%= @user.username %>'s Profile </h1>
 </div>
 
-<% for media_item in @client.user_recent_media %>
-    <div style='float:left;'><img src=<%= media_item.images.thumbnail.url %>><br/> 
-    Likes: <%= media_item.likes[:count] %> </div>
-<% end %>
-
-<%# <%= link_to 'Logout', logout_path, method: :delete %>
-
+<div align="center">
+    <ul class="listing">
+        <% for media_item in @client.user_recent_media %>
+            <div class="media_item">
+                <img class="media-pic"src=<%= media_item.images.thumbnail.url %>>
+                <div class="pic-body">
+                    <i class="fa fa-thumbs-o-up" style="font-size:20px"></i>
+                    <p class="likes-count">Likes: <%= media_item.likes[:count]%> </p> 
+                </div>
+            </div>
+        <% end %>
+    </ul>
+</div>

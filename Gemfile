@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Adding Bootstrap gems
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'will_paginate', '3.0.7'
+gem "font-awesome-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

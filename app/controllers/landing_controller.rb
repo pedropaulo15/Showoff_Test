@@ -9,12 +9,12 @@ class LandingController < ApplicationController
         current_user
         @client = Instagram.client(:access_token => session[:access_token])
         @user = @client.user
-        flash[:success] = "Welcome to #{@user.username} Showoff Test - Instagram Authentication"
+        # flash[:success] = "Welcome to Showoff Test - Instagram Authentication"
     end
 
-    # def destroy
-    #     session[:access_token] = nil
-    #     flash[:success] = "You have Logged out."
-    #     redirect_to root_path
-    # end
+    def destroy
+        session[:access_token] = nil
+        flash[:success] = "You have Logged out."
+        redirect_to root_path
+    end
 end
