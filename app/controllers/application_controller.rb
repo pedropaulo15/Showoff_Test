@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
     if !session[:access_token]
       @current_user = Instagram.get_access_token(params[:code], redirect_uri: ENV['REDIRECT_URI'])
       session[:access_token] = @current_user.access_token
+      flash[:success] = "Welcome to Showoff Test - Instagram Authentication"
       @current_user
     end
   end
