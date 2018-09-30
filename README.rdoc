@@ -1,1 +1,8 @@
 Showoff technical test.
+
+
+TO DO
+Add Tests (RSpec) - API Endpoints/Actions/gems
+Add error msg - Failure with aithentication
+Fix Bugs - Session/Refresh/Msgs
+Add Comments
